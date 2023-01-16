@@ -1,5 +1,9 @@
 /DASC_NT_Project.pdf
 /data
 /IJSRP-paper-submission-format-double-column (1).docx
-/prediction_model
+/prediction_model/data.npy
+/prediction_model/label.npy
+/prediction_model/Fast-Food-Classification-Bit.h5
+/prediction_model/Project2.ipynb
 /report.docx
+/prediction_model/my_model-v1
