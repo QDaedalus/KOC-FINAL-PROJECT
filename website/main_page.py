@@ -36,6 +36,17 @@ def success():
         basedir = os.path.abspath(os.path.dirname(__file__))
         f.save(os.path.join(basedir, app.config['UPLOAD_FOLDER'], f.filename))
         return render_template("Acknowledgement.html", name = f.filename)  
-  
+
+# @app.route('/select_page', methods = ['GET'])  
+# def select_page():  
+#     if request.method == 'GET':  
+#         return render_template("select_page.html")  
+
+@app.route('/select_page', methods = ['GET'])    
+def select_page():
+    images = os.listdir(os.path.join(app.static_folder, "images"))
+    print("ZOOOO")
+    # print(images)
+    return render_template('select_page.html',images=images)
 if __name__ == "__main__":
     app.run(debug=True)
